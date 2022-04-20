@@ -33,7 +33,7 @@ class Particle { //create a class to hold all of the logic
 
         setTimeout(() => {
             this.el.remove();
-            particles.splice(particles.indexOf(this), 1); //Removes the element after 300 milliseconds
+            particles.splice(particles.indexOf(this), 1); //Removes the element after 500 milliseconds
         }, 500);
     }
 
@@ -79,7 +79,7 @@ class Firework { //create a class to hold all of the logic
     }
 
     explode() {
-        for (let i = 0; i < 120; i++) {
+        for (let i = 0; i < 120; i++) { //Creates 120 Particles on each explode() function
             const particle = new Particle();
             particle.setPosition(this.x, this.y);
             particles.push(particle);
@@ -87,7 +87,7 @@ class Firework { //create a class to hold all of the logic
     }
 
     update() {
-        this.x += this.vx; //Every time updae is called, it slowly increments it by a certain amount every time update is called
+        this.x += this.vx; //Every time update is called, it slowly increments it by a certain amount every time update is called
         this.y += this.vy;
         this.el.style.left = this.x + 'px'; //This also needs to be set in the function to keep the style updating
         this.el.style.top = this.y + 'px';
