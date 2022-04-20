@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.firework {
+    position: fixed;
+    /*positions the div onto the window*/
+    background-image: url(firework-no-background.png);
+    /*Sets the image as the created div*/
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    /*Makes sure that the image completely covers the background area that its spaced for*/
+
+}
+
+.particle {
+    position: fixed;
+    /*positions the div onto the window*/
+    background-color: red;
+    /*Sets the image as the created div*/
+    width: 3.3px;
+    height: 3.3px;
+    /*Makes sure that the image completely covers the background area that its spaced for*/
+
+}
